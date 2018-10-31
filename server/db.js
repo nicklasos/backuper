@@ -1,9 +1,9 @@
 const config = require('./config');
 
-const db = config.db[process.env.NODE_ENV || 'dev'];
+const db = config.db[process.env.NODE_ENV || 'development'];
 
 const knex = require('knex')({
-  client: 'mysql',
+  client: db.driver,
   connection: {
     supportBigNumbers: true,
     bigNumberStrings: true,

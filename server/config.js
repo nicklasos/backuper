@@ -9,15 +9,13 @@ module.exports = {
       'password': process.env.DB_PASSWORD,
       'database': process.env.DB_DATABASE,
       'driver': 'mysql',
-      'multipleStatements': true,
     },
-    'dev': {
+    'development': {
       'host': process.env.DB_HOST,
       'user': process.env.DB_USERNAME,
       'password': process.env.DB_PASSWORD,
       'database': process.env.DB_DATABASE,
       'driver': 'mysql',
-      'multipleStatements': true,
     },
     'test': {
       'host': 'localhost',
@@ -25,7 +23,6 @@ module.exports = {
       'password': '',
       'database': 'backuper_test',
       'driver': 'mysql',
-      'multipleStatements': true,
     },
   },
 };
